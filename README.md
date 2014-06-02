@@ -9,12 +9,12 @@ described by [Kohlbecker](http://www.cs.ucdavis.edu/~devanbu/teaching/260/kohlbe
 
 Hygme uses s-expressions, but has the following BNF-ish:
 
-   Abs := (fn var body)
-   Var := <symbol>
-   Const := <string> | <symbol> | <number> | <boolean> ...
-   Cond := (if <condition> <consequent> <alternate>)
-   Assm := (set! var value)
-   App := (<expr> <expr> ...)
+    Abs := (fn var body)
+    Var := <symbol>
+    Const := <string> | <symbol> | <number> | <boolean> ...
+    Cond := (if <condition> <consequent> <alternate>)
+    Assm := (set! var value)
+    App := (<expr> <expr> ...)
 
 Abs (abstractions), you'll notice take, and *must* have a single argument. Multiple
 arguments can be obtained via currying, though zeroadic functions simply are not
